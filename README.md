@@ -5,7 +5,7 @@
 ![1493335479979.mp4_1493336353.gif](http://upload-images.jianshu.io/upload_images/3001453-02f7e2a8724dacd9.gif?imageMogr2/auto-orient/strip)
 
 |属性   |含义|
-|----------|--- ---------- |
+|----------|------------- |
 |circleColor|圆环的颜色|
 |lineColor|下面的线条的颜色|
 |lineDuration|线条头的移动时间(单位ms)|
