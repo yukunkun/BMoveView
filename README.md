@@ -13,6 +13,7 @@
 |circleDuration|圆圈的动画时间(单位ms)|
 |circleCenterColor|圆圈中心的颜色(可以不和背景一样)|
 |circleRadio|圆圈的半径|
+
 #### 以上就是所有的属性
 #### 可以设置不同的移动效果,根据个人需求来实现
 #### 使用
