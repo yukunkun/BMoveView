@@ -3,16 +3,17 @@
 [使用方法](http://www.jianshu.com/p/4a6dfe1b7e59)
 #### 上图
 ![1493335479979.mp4_1493336353.gif](http://upload-images.jianshu.io/upload_images/3001453-02f7e2a8724dacd9.gif?imageMogr2/auto-orient/strip)
-####  `BMoveView`修改之后，可以实现多个button的点击移动动画，四个，五个，六个皆可以，对于之前是实现方式做了修改，进一步完成多点实现
+####  `BMoveView`修改之后，可以实现多个button的点击移动动画，四个，五个，六个 ，个皆可以，对于之前是实现方式做了修改，进一步完成多点实现
 
 ![S81112-15260812.jpg](https://upload-images.jianshu.io/upload_images/3001453-eb35f9ea1e353b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![S81112-15280658.jpg](https://upload-images.jianshu.io/upload_images/3001453-fd4cf44e30af6dea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+#### 方法属性
 
 |属性   |含义 |
 |----------|------------- |
-|circleColor|圆环的颜色|
+|circleColor|圆环的颜色|N
 |lineColor|下面的线条的颜色|
 |lineDuration|线条头的移动时间(单位ms)|
 |lineWidth|线条的宽度|
@@ -40,14 +41,14 @@
             yk:circleCenterColor="#FFFFFF"
             yk:circlemRadio="25"
             />
-        <mRadioGroup
+        <RadioGroup
             android:id="@+id/rg_group"
             android:gravity="center"
             android:weightSum="3"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="60dp">
-            <mRadioButton
+            <RadioButton
                 android:id="@+id/rb_first"
                 android:button="@null"
                 android:text="索引"
@@ -57,7 +58,7 @@
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-            <mRadioButton
+            <RadioButton
                 android:id="@+id/rb_second"
                 android:button="@null"
                 android:text="热门"
@@ -67,7 +68,7 @@
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-            <mRadioButton
+            <RadioButton
                 android:id="@+id/rb_third"
                 android:button="@null"
                 android:text="我的"
@@ -107,19 +108,20 @@
     
         private void bMoveInit() {
             mBMoveView = (BMoveView) findViewById(R.id.bmoveview);
-            mRadioGroup mRadioGroup= (mRadioGroup) findViewById(R.id.rg_group);
-            ((mRadioButton) (mRadioGroup.getChildAt(0))).setChecked(true);
+            RadioGroup mRadioGroup= (RadioGroup) findViewById(R.id.rg_group);
+            ((RadioButton) (mRadioGroup.getChildAt(0))).setChecked(true);
             mFirstPos = 0;
+            mBMoveView.setButonCount(3);
             mBMoveView.startAnim();
-            mRadioGroup.setOnCheckedChangeListener(new mRadioGroup.OnCheckedChangeListener() {
+            mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                 @Override
-                public void onCheckedChanged(mRadioGroup group, int checkedId) {
+                public void onCheckedChanged(RadioGroup group, int checkedId) {
                     for (int i = 0; i < group.getChildCount(); i++) {
-                        boolean checked = ((mRadioButton) (group.getChildAt(i))).isChecked();
+                        boolean checked = ((RadioButton) (group.getChildAt(i))).isChecked();
                         if(checked){
-                            mLastPos = i; //当前的点击位置
+                            mLastPos = i;
                             mBMoveView.setTwoPos(mFirstPos, mLastPos);
-                            mFirstPos = mLastPos; //记录上一次的点击位置,更新位置
+                            mFirstPos = mLastPos;
                         }
                     }
                 }
