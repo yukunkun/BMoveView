@@ -17,19 +17,29 @@
             android:layout_height="60dp"
             yk:circleColor="#fd4040"
             yk:lineColor="#fd4040"
-            yk:lineDuration="150"
+            yk:lineDuration="800"
             yk:lineWidth="3"
             yk:circleDuration="500"
             yk:circleCenterColor="#FFFFFF"
-            yk:circleRadio="25"
+            yk:circlemRadio="22"
             />
         <RadioGroup
             android:id="@+id/rg_group"
             android:gravity="center"
-            android:weightSum="3"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="60dp">
+            <RadioButton
+                android:id="@+id/rb_rec"
+                android:button="@null"
+                android:text="推荐"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:textColor="@drawable/rb_button"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
             <RadioButton
                 android:id="@+id/rb_first"
                 android:button="@null"

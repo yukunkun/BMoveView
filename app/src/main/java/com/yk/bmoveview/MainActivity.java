@@ -20,11 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void bMoveInit() {
         mBMoveView = (BMoveView) findViewById(R.id.bmoveview);
-        RadioGroup radioGroup= (RadioGroup) findViewById(R.id.rg_group);
-        ((RadioButton) (radioGroup.getChildAt(0))).setChecked(true);
+        RadioGroup mRadioGroup= (RadioGroup) findViewById(R.id.rg_group);
+        ((RadioButton) (mRadioGroup.getChildAt(0))).setChecked(true);
         mFirstPos = 0;
+        mBMoveView.setButonCount(4);
         mBMoveView.startAnim();
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 for (int i = 0; i < group.getChildCount(); i++) {

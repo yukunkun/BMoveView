@@ -6,16 +6,19 @@
     <attr name="lineDuration" format="integer" />
     <attr name="circleDuration" format="integer" />
     <attr name="circleCenterColor" format="color"/>
-    <attr name="circleRadio" format="integer" />
+    <attr name="circlemRadio" format="integer" />
     <attr name="circleColor" format="color" />
+    <attr name="buttonCount" format="integer" />
 
     <declare-styleable name="BMoveView">
         <attr name="circleColor" />
         <attr name="circleCenterColor" />
         <attr name="lineColor" />
         <attr name="lineWidth" />
-        <attr name="circleRadio"/>
+        <attr name="circlemRadio"/>
         <attr name="lineDuration" />
         <attr name="circleDuration" />
+        <attr name="buttonCount" />
+
     </declare-styleable>
 </resources>

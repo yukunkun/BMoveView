@@ -1,4 +1,4 @@
-#### BMoveView RadioGroup添加移动的特效的View
+#### BMoveView mRadioGroup添加移动的特效的View
 #### 相信你喜欢直接了当
 [使用方法](http://www.jianshu.com/p/4a6dfe1b7e59)
 #### 上图
@@ -12,7 +12,7 @@
 |lineWidth|线条的宽度|
 |circleDuration|圆圈的动画时间(单位ms)|
 |circleCenterColor|圆圈中心的颜色(可以不和背景一样)|
-|circleRadio|圆圈的半径|
+|circlemRadio|圆圈的半径|
 
 #### 以上就是所有的属性
 #### 可以设置不同的移动效果,根据个人需求来实现
@@ -31,16 +31,16 @@
             yk:lineWidth="3"
             yk:circleDuration="500"
             yk:circleCenterColor="#FFFFFF"
-            yk:circleRadio="25"
+            yk:circlemRadio="25"
             />
-        <RadioGroup
+        <mRadioGroup
             android:id="@+id/rg_group"
             android:gravity="center"
             android:weightSum="3"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="60dp">
-            <RadioButton
+            <mRadioButton
                 android:id="@+id/rb_first"
                 android:button="@null"
                 android:text="索引"
@@ -50,7 +50,7 @@
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-            <RadioButton
+            <mRadioButton
                 android:id="@+id/rb_second"
                 android:button="@null"
                 android:text="热门"
@@ -60,7 +60,7 @@
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-            <RadioButton
+            <mRadioButton
                 android:id="@+id/rb_third"
                 android:button="@null"
                 android:text="我的"
@@ -70,7 +70,7 @@
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-        </RadioGroup>
+        </mRadioGroup>
     </RelativeLayout>
 #### 其中
       <com.yk.myselfview.views.BMoveView
@@ -83,12 +83,12 @@
           yk:lineWidth="3"
           yk:circleDuration="500"
           yk:circleCenterColor="#FFFFFF"
-          yk:circleRadio="25"/>
+          yk:circlemRadio="25"/>
 #### 为主要的布局,是我们的自定义的BMoveView
 #### 在Activity里,如下:
       public class BMoveViewActivity extends Activity {
-        private int mFirstPos; //上一次的radiobutton位置
-        private int mLastPos;  //点击的radiobutton位置
+        private int mFirstPos; //上一次的mRadiobutton位置
+        private int mLastPos;  //点击的mRadiobutton位置
         private BMoveView mBMoveView;
     
         @Override
@@ -100,15 +100,15 @@
     
         private void bMoveInit() {
             mBMoveView = (BMoveView) findViewById(R.id.bmoveview);
-            RadioGroup radioGroup= (RadioGroup) findViewById(R.id.rg_group);
-            ((RadioButton) (radioGroup.getChildAt(0))).setChecked(true);
+            mRadioGroup mRadioGroup= (mRadioGroup) findViewById(R.id.rg_group);
+            ((mRadioButton) (mRadioGroup.getChildAt(0))).setChecked(true);
             mFirstPos = 0;
             mBMoveView.startAnim();
-            radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            mRadioGroup.setOnCheckedChangeListener(new mRadioGroup.OnCheckedChangeListener() {
                 @Override
-                public void onCheckedChanged(RadioGroup group, int checkedId) {
+                public void onCheckedChanged(mRadioGroup group, int checkedId) {
                     for (int i = 0; i < group.getChildCount(); i++) {
-                        boolean checked = ((RadioButton) (group.getChildAt(i))).isChecked();
+                        boolean checked = ((mRadioButton) (group.getChildAt(i))).isChecked();
                         if(checked){
                             mLastPos = i; //当前的点击位置
                             mBMoveView.setTwoPos(mFirstPos, mLastPos);
