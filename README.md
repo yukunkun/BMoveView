@@ -1,5 +1,5 @@
 #### BMoveView mRadioGroup添加移动的特效的View
-#### 相信你喜欢直接了当
+#### 相信你喜欢直接
 [使用方法](http://www.jianshu.com/p/4a6dfe1b7e59)
 #### 上图
 ![1493335479979.mp4_1493336353.gif](http://upload-images.jianshu.io/upload_images/3001453-02f7e2a8724dacd9.gif?imageMogr2/auto-orient/strip)
