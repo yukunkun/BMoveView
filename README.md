@@ -7,11 +7,8 @@
 
 ![S81112-15260812.jpg](https://upload-images.jianshu.io/upload_images/3001453-eb35f9ea1e353b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![S81112-15263231.jpg](https://upload-images.jianshu.io/upload_images/3001453-7831fe85a36445c8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ![S81112-15280658.jpg](https://upload-images.jianshu.io/upload_images/3001453-fd4cf44e30af6dea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![S81112-15275978.jpg](https://upload-images.jianshu.io/upload_images/3001453-74762e784a912c5a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 |属性   |含义 |
 |----------|------------- |
