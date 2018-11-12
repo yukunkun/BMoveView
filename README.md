@@ -1,10 +1,19 @@
 #### BMoveView mRadioGroup添加移动的特效的View
-#### 相信你喜欢直接了当
+#### 相信你喜欢直接了当一点
 [使用方法](http://www.jianshu.com/p/4a6dfe1b7e59)
 #### 上图
 ![1493335479979.mp4_1493336353.gif](http://upload-images.jianshu.io/upload_images/3001453-02f7e2a8724dacd9.gif?imageMogr2/auto-orient/strip)
+####  `BMoveView`修改之后，可以实现多个button的点击移动动画，四个，五个，六个皆可以，对于之前是实现方式做了修改，进一步完成多点实现
 
-|属性   |含义|
+![S81112-15260812.jpg](https://upload-images.jianshu.io/upload_images/3001453-eb35f9ea1e353b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![S81112-15263231.jpg](https://upload-images.jianshu.io/upload_images/3001453-7831fe85a36445c8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![S81112-15280658.jpg](https://upload-images.jianshu.io/upload_images/3001453-fd4cf44e30af6dea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![S81112-15275978.jpg](https://upload-images.jianshu.io/upload_images/3001453-74762e784a912c5a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+|属性   |含义 |
 |----------|------------- |
 |circleColor|圆环的颜色|
 |lineColor|下面的线条的颜色|
@@ -13,6 +22,7 @@
 |circleDuration|圆圈的动画时间(单位ms)|
 |circleCenterColor|圆圈中心的颜色(可以不和背景一样)|
 |circlemRadio|圆圈的半径|
+|buttonCount|button个数|
 
 #### 以上就是所有的属性
 #### 可以设置不同的移动效果,根据个人需求来实现

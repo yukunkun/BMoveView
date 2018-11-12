@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup mRadioGroup= (RadioGroup) findViewById(R.id.rg_group);
         ((RadioButton) (mRadioGroup.getChildAt(0))).setChecked(true);
         mFirstPos = 0;
-        mBMoveView.setButonCount(4);
+        mBMoveView.setButonCount(5);
         mBMoveView.startAnim();
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
