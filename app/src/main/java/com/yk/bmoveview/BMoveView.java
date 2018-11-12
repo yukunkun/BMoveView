@@ -154,7 +154,7 @@ public class BMoveView extends View {
         mPaintLine.setAntiAlias(true);
         mPaintLine.setStyle(Paint.Style.FILL);
         //可以画内圆圈的颜色
-//        canvas.drawArc(mRectF,90,mRoationx,true,mPaintLine);
+        canvas.drawArc(mRectF,90,mRoationx,true,mPaintLine);
         //画线条
         mPaintLine.setColor(mLineColor);
         mPaintLine.setStrokeWidth(mRadio);
@@ -212,6 +212,4 @@ public class BMoveView extends View {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
-
-
 }

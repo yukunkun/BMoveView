@@ -4,11 +4,17 @@
 #### 上图
 ![1493335479979.mp4_1493336353.gif](http://upload-images.jianshu.io/upload_images/3001453-02f7e2a8724dacd9.gif?imageMogr2/auto-orient/strip)
 ####  `BMoveView`修改之后，可以实现多个button的点击移动动画，四个，五个，六个 ，个皆可以，对于之前是实现方式做了修改，进一步完成多点实现
-
 ![S81112-15260812.jpg](https://upload-images.jianshu.io/upload_images/3001453-eb35f9ea1e353b9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ![S81112-15280658.jpg](https://upload-images.jianshu.io/upload_images/3001453-fd4cf44e30af6dea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+
+####还有一些异形效果可以参考简书连接
+[BMoveView,RadioGroup添加移动的特效View（update）](https://www.jianshu.com/p/a662deee4eb7)
+
+![S81112-16581323.jpg](https://upload-images.jianshu.io/upload_images/3001453-da4caa4c8d3d3310.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  ![S81112-16580879.jpg](https://upload-images.jianshu.io/upload_images/3001453-08619e7ef2b49b52.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ ![S81112-16580527.jpg](https://upload-images.jianshu.io/upload_images/3001453-e69d25b2dedc6baf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#### 具体方法可以参见demo
 #### 方法属性
 
 |属性   |含义 |
